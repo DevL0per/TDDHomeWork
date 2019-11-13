@@ -13,7 +13,20 @@
 		F68E5FF9237C897800D89741 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F68E5FF7237C897800D89741 /* Main.storyboard */; };
 		F68E5FFB237C897A00D89741 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F68E5FFA237C897A00D89741 /* Assets.xcassets */; };
 		F68E5FFE237C897A00D89741 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F68E5FFC237C897A00D89741 /* LaunchScreen.storyboard */; };
+		F68E600C237C89A400D89741 /* TDDHomeWorkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68E600B237C89A400D89741 /* TDDHomeWorkTests.swift */; };
+		F68E6014237C89D800D89741 /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68E6013237C89D800D89741 /* PersonTests.swift */; };
+		F68E6017237C8A2700D89741 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68E6016237C8A2700D89741 /* Person.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F68E600E237C89A400D89741 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F68E5FE6237C897800D89741 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F68E5FED237C897800D89741;
+			remoteInfo = TDDHomeWork;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F68E5FEE237C897800D89741 /* TDDHomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDDHomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +37,22 @@
 		F68E5FFA237C897A00D89741 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F68E5FFD237C897A00D89741 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F68E5FFF237C897A00D89741 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F68E6009237C89A400D89741 /* TDDHomeWorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDHomeWorkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F68E600B237C89A400D89741 /* TDDHomeWorkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDHomeWorkTests.swift; sourceTree = "<group>"; };
+		F68E600D237C89A400D89741 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F68E6013237C89D800D89741 /* PersonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
+		F68E6016237C8A2700D89741 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F68E5FEB237C897800D89741 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F68E6006237C89A400D89741 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				F68E5FF0237C897800D89741 /* TDDHomeWork */,
+				F68E600A237C89A400D89741 /* TDDHomeWorkTests */,
 				F68E5FEF237C897800D89741 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				F68E5FEE237C897800D89741 /* TDDHomeWork.app */,
+				F68E6009237C89A400D89741 /* TDDHomeWorkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +83,7 @@
 		F68E5FF0237C897800D89741 /* TDDHomeWork */ = {
 			isa = PBXGroup;
 			children = (
+				F68E6015237C8A1300D89741 /* Model */,
 				F68E5FF1237C897800D89741 /* AppDelegate.swift */,
 				F68E5FF3237C897800D89741 /* SceneDelegate.swift */,
 				F68E5FF5237C897800D89741 /* ViewController.swift */,
@@ -65,6 +93,24 @@
 				F68E5FFF237C897A00D89741 /* Info.plist */,
 			);
 			path = TDDHomeWork;
+			sourceTree = "<group>";
+		};
+		F68E600A237C89A400D89741 /* TDDHomeWorkTests */ = {
+			isa = PBXGroup;
+			children = (
+				F68E600B237C89A400D89741 /* TDDHomeWorkTests.swift */,
+				F68E600D237C89A400D89741 /* Info.plist */,
+				F68E6013237C89D800D89741 /* PersonTests.swift */,
+			);
+			path = TDDHomeWorkTests;
+			sourceTree = "<group>";
+		};
+		F68E6015237C8A1300D89741 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F68E6016237C8A2700D89741 /* Person.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +133,24 @@
 			productReference = F68E5FEE237C897800D89741 /* TDDHomeWork.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F68E6008237C89A400D89741 /* TDDHomeWorkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F68E6010237C89A400D89741 /* Build configuration list for PBXNativeTarget "TDDHomeWorkTests" */;
+			buildPhases = (
+				F68E6005237C89A400D89741 /* Sources */,
+				F68E6006237C89A400D89741 /* Frameworks */,
+				F68E6007237C89A400D89741 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F68E600F237C89A400D89741 /* PBXTargetDependency */,
+			);
+			name = TDDHomeWorkTests;
+			productName = TDDHomeWorkTests;
+			productReference = F68E6009237C89A400D89741 /* TDDHomeWorkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +163,10 @@
 				TargetAttributes = {
 					F68E5FED237C897800D89741 = {
 						CreatedOnToolsVersion = 11.2;
+					};
+					F68E6008237C89A400D89741 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = F68E5FED237C897800D89741;
 					};
 				};
 			};
@@ -116,6 +184,7 @@
 			projectRoot = "";
 			targets = (
 				F68E5FED237C897800D89741 /* TDDHomeWork */,
+				F68E6008237C89A400D89741 /* TDDHomeWorkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +200,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F68E6007237C89A400D89741 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,11 +216,29 @@
 			files = (
 				F68E5FF6237C897800D89741 /* ViewController.swift in Sources */,
 				F68E5FF2237C897800D89741 /* AppDelegate.swift in Sources */,
+				F68E6017237C8A2700D89741 /* Person.swift in Sources */,
 				F68E5FF4237C897800D89741 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F68E6005237C89A400D89741 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F68E6014237C89D800D89741 /* PersonTests.swift in Sources */,
+				F68E600C237C89A400D89741 /* TDDHomeWorkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F68E600F237C89A400D89741 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F68E5FED237C897800D89741 /* TDDHomeWork */;
+			targetProxy = F68E600E237C89A400D89741 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F68E5FF7237C897800D89741 /* Main.storyboard */ = {
@@ -316,6 +410,46 @@
 			};
 			name = Release;
 		};
+		F68E6011237C89A400D89741 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RYT7ZAW62J;
+				INFOPLIST_FILE = TDDHomeWorkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = roman.TDDHomeWorkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDDHomeWork.app/TDDHomeWork";
+			};
+			name = Debug;
+		};
+		F68E6012237C89A400D89741 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RYT7ZAW62J;
+				INFOPLIST_FILE = TDDHomeWorkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = roman.TDDHomeWorkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDDHomeWork.app/TDDHomeWork";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -333,6 +467,15 @@
 			buildConfigurations = (
 				F68E6003237C897A00D89741 /* Debug */,
 				F68E6004237C897A00D89741 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F68E6010237C89A400D89741 /* Build configuration list for PBXNativeTarget "TDDHomeWorkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F68E6011237C89A400D89741 /* Debug */,
+				F68E6012237C89A400D89741 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
