@@ -27,3 +27,9 @@ struct Person {
         self.surname = surname
     }
 }
+
+extension Person: Equatable {
+    static func==(lhs: Person, rhs: Person) -> Bool {
+        return lhs.phone == rhs.phone
+    }
+}

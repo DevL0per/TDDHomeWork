@@ -16,6 +16,8 @@
 		F68E600C237C89A400D89741 /* TDDHomeWorkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68E600B237C89A400D89741 /* TDDHomeWorkTests.swift */; };
 		F68E6014237C89D800D89741 /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68E6013237C89D800D89741 /* PersonTests.swift */; };
 		F68E6017237C8A2700D89741 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68E6016237C8A2700D89741 /* Person.swift */; };
+		F6BA5BFC23807F9F00A21A0B /* ContactManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BA5BFB23807F9F00A21A0B /* ContactManager.swift */; };
+		F6BA5BFE23807FCA00A21A0B /* ContactManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BA5BFD23807FCA00A21A0B /* ContactManagerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		F68E600D237C89A400D89741 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F68E6013237C89D800D89741 /* PersonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
 		F68E6016237C8A2700D89741 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		F6BA5BFB23807F9F00A21A0B /* ContactManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactManager.swift; sourceTree = "<group>"; };
+		F6BA5BFD23807FCA00A21A0B /* ContactManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactManagerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 		F68E5FF0237C897800D89741 /* TDDHomeWork */ = {
 			isa = PBXGroup;
 			children = (
+				F6BA5BFA23807F6100A21A0B /* Managers */,
 				F68E6015237C8A1300D89741 /* Model */,
 				F68E5FF1237C897800D89741 /* AppDelegate.swift */,
 				F68E5FF3237C897800D89741 /* SceneDelegate.swift */,
@@ -98,9 +103,10 @@
 		F68E600A237C89A400D89741 /* TDDHomeWorkTests */ = {
 			isa = PBXGroup;
 			children = (
+				F6BA5BF723807F1E00A21A0B /* Managers */,
+				F6BA5BF623807EC200A21A0B /* Models */,
 				F68E600B237C89A400D89741 /* TDDHomeWorkTests.swift */,
 				F68E600D237C89A400D89741 /* Info.plist */,
-				F68E6013237C89D800D89741 /* PersonTests.swift */,
 			);
 			path = TDDHomeWorkTests;
 			sourceTree = "<group>";
@@ -111,6 +117,30 @@
 				F68E6016237C8A2700D89741 /* Person.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F6BA5BF623807EC200A21A0B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F68E6013237C89D800D89741 /* PersonTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F6BA5BF723807F1E00A21A0B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F6BA5BFD23807FCA00A21A0B /* ContactManagerTests.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F6BA5BFA23807F6100A21A0B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F6BA5BFB23807F9F00A21A0B /* ContactManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6BA5BFC23807F9F00A21A0B /* ContactManager.swift in Sources */,
 				F68E5FF6237C897800D89741 /* ViewController.swift in Sources */,
 				F68E5FF2237C897800D89741 /* AppDelegate.swift in Sources */,
 				F68E6017237C8A2700D89741 /* Person.swift in Sources */,
@@ -227,6 +258,7 @@
 			files = (
 				F68E6014237C89D800D89741 /* PersonTests.swift in Sources */,
 				F68E600C237C89A400D89741 /* TDDHomeWorkTests.swift in Sources */,
+				F6BA5BFE23807FCA00A21A0B /* ContactManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
