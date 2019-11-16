@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TDDHomeWork" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="viewController" id="BYZ-38-t0r" customClass="ViewController" customModule="TDDHomeWork" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,6 +44,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTW-ni-pZf">
                                                 <rect key="frame" x="170" y="0.0" width="34" height="30"/>
                                                 <state key="normal" title="Save"/>
+                                                <connections>
+                                                    <action selector="saveContact" destination="BYZ-38-t0r" eventType="touchUpInside" id="89h-km-VRw"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -58,6 +61,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="Ysn-uQ-9Jy" id="5cI-Qf-Jy1"/>
+                        <outlet property="phoneNumberTextField" destination="wdo-2s-psh" id="F6p-pd-306"/>
+                        <outlet property="saveButton" destination="kTW-ni-pZf" id="GZa-yX-MV2"/>
+                        <outlet property="suranameTextField" destination="JUv-5l-Llg" id="3XF-S9-jHi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

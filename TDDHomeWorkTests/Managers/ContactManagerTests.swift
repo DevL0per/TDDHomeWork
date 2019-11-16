@@ -15,6 +15,8 @@ class ContactManagerTests: XCTestCase {
     var person: Person!
 
     override func setUp() {
+        super.setUp()
+        
         contactManager = ContactManager()
         person = Person(name: "Foo", phone: "Bar")
     }
@@ -22,6 +24,7 @@ class ContactManagerTests: XCTestCase {
     override func tearDown() {
         contactManager = nil
         person = nil
+        super.tearDown()
     }
 
     func testInitContactManagerWithEmptyList() {
